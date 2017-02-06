@@ -1,0 +1,39 @@
+
+
+
+.div-a {
+    background: red;
+    height: 50px;
+    width: 100px;
+}
+
+.div-b {
+    background: yellow;
+    height: 50px;
+    width: 200px;
+    float: right;
+}
+
+.div-c {
+    background: blue;
+    height: 50px;
+    width: 300px;
+    float: left;
+}
+
+.div-ca {
+    width: calc(100% - 500)/2;
+    background: black;
+    height: 50px;
+}
+
+.div-d {
+    background: gray;
+    height: 50px;
+    width: 400px;
+    float: left;
+}
+
+.input2 {
+    float: left;
+}

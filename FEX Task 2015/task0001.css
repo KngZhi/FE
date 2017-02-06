@@ -5,8 +5,8 @@
 }
 
 h1 {
-    color: blue;
     font-family: "Pacifico";
+    color: blue;
 }
 
 h2 {
@@ -17,75 +17,45 @@ ul {
     list-style-type: none;
 }
 
+
 p {
     text-indent: 2em;
-    font-size: 12px;
-    color: rgb(255, 200, 106);
+    font-size: 15px;
+    white-space: pre-wrap;
+
+    color: #0f0;
     background-color: black;
     word-spacing: 0.3em;
-    white-space: pre-wrap;
 }
+
 
 img {
-    border: 2px solid red;
     max-width: 400px;
+    border: 2px solid red;
 }
 
 
-span {
-    text-transform: capitalize;
-    text-decoration: underline;
-    text-align: left;
-}
-#div-test {
-    text-align: center;
-}
-#div-red {
+#red-center {
     display: inline-block;
-    background-color: red;
     width: 960px;
     margin: 0 auto;
+
+    background-color: #f00;
+    text-align: center;
+
 }
 
-.wrapper {
+.header {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.trapezoid-1 {
     max-width: 300px;
-    margin: 0 atuo;
+    margin: 10px auto;
 }
 
-.col-grid {
-    max-width: 500px;
-    height: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.div-a {
-    width: 200px;
-    height: 50%;
-    background-color: orangered;
-}
-
-.div-b {
-    max-width: 450px;
-    width: 60%;
-    height: 50%;
-    background-color: blue;
-}
-
-.div-c {
-    background-color: yellow;
-    width: 100%;
-    height: 50%;
-}
-
-
-
-.content {
-    color: #fff;
-    background-color: #111;
-}
-
-.top {
+.trapezoid-1-top {
     height: 0;
     border-top: 3px solid transparent;
     border-right: 3px solid transparent;
@@ -93,7 +63,13 @@ span {
     border-bottom: 3px solid #111;
 }
 
-.bottom {
+.trapezoid-1-content {
+    color: #111;
+    background-color: #111;
+    height: 200px;
+}
+
+.trapezoid-1-bottom {
     height: 0;
     border-top: 3px solid #111;
     border-right: 3px solid transparent;
@@ -101,8 +77,175 @@ span {
     border-bottom: 3px solid transparent;
 }
 
+.r {
+    margin: 5px auto;
+}
+.r1 {
+    margin: 0 3px;
+    height: 1px;
+    background: #111;
+}
+
+.r2 {
+    margin: 0 2px;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+    height: 1px;
+    background: #f4b4b4;
+}
+
+.r3 {
+    margin: 0 1px;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+    height: 1px;
+    background: #f4b4b4;
+
+}
+
+.content {
+    height: 100px;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+    background: #f4b4b4;
+}
+
+
 @font-face {
     font-family: "Pacifico";
     src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf")
     font-weight: bold;
+}
+
+/*方法一*/
+.col-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20px;
+    margin: 20px 0;
+}
+
+.div-a {
+    width: 100px;
+    background-color: orangered;
+    height: 100%;
+}
+
+.div-b {
+    width: calc(100% - 100px);
+    background-color: blue;
+}
+
+.div-c {
+    background-color: yellow;
+    width: 100%;
+    clear: left;
+}
+
+/*方法二*/
+.col-grid-2 {
+    width: 100%;
+    margin-top: 20px;
+    height: 20px;
+}
+
+.div-a-1 {
+    background-color: orangered;
+    float: left;
+    width: 100px;
+}
+
+.div-b-1 {
+    background-color: blue;
+    width: 100% - 200px;
+}
+
+.div-c-1 {
+    background-color: yellow;
+}
+
+/* 三列布局方法一 */
+
+.col-grid-3 {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 100px;
+    background-color: red;
+}
+
+.col-2 {
+    width: calc(100% - 200px);
+    background-color: blue;
+}
+
+.col-3 {
+    width: 100px;
+    background-color: green;
+}
+
+/*三列布局方法二*/
+
+.col-grid-3a {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.col-1-a {
+    float: left;
+    width: 100px;
+    background-color: orangered;
+}
+
+.col-2-a {
+    width: calc(100% - 200px);
+    background-color: blue;
+    float: left;
+}
+
+.col-3-a {
+    width: 100px;
+    background-color: yellow;
+    float: left;
+}
+
+/*三列布局负边距法*/
+.main {
+    float: left;
+    width: 100%;
+    background: red;
+}
+
+.sub {
+    float: left;
+    width: 190px;
+    margin-left: -100%;
+    background: blue;
+}
+
+.extra {
+    float: left;
+    width: 190px;
+    margin-left: 190px;
+    background: yellow;
+}
+
+
+.sum {
+    overflow: hidden;
+    background: #f00;
+}
+
+.blue {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-left: 1em;
+    margin-top: 1em;
+    background: #00f;
 }
