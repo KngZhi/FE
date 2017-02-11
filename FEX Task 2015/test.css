@@ -1,4 +1,4 @@
-
+/*
 
 
 .div-a {
@@ -36,4 +36,129 @@
 
 .input2 {
     float: left;
+}*/
+
+/*双飞翼*/
+
+/*.container {
+    width: 100%;
+}
+
+.main,
+.left,
+.right {
+    float: left;
+    min-height: 100px;
+}
+
+.main {
+    float: left;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.left {
+    float: left;
+    width: 190px;
+    margin-left: -100%;
+    background: lightblue;
+}
+
+.right {
+    float: left;
+    width: 190px;
+    margin-left: -190px;
+    background: #ffe3d7;
+}
+
+.main-wrap {
+    margin-left: 200px;
+    margin-right: 200px;
+    background: #f5f5f5;
+}*/
+
+
+/*圣杯布局*/
+
+/** {
+    min-height: 100px;
+}*/
+
+body {
+    min-width: 550px;
+}
+
+#contain {
+    padding-left: 200px;
+    padding-right: 150px;
+}
+
+#contain .column {
+    float: left;
+    position: relative;
+}
+
+#center {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+#left {
+    width: 200px;
+    margin-left: -100%;
+    right: 200px;
+    background: lightblue;
+}
+/*the right property pushes it 200px away from the right edge;that is, to the left.*/
+
+#right {
+    width: 150px;
+    background: #ffe3d7;
+    margin-right: -150px;
+}
+
+#header {
+    margin-top: 20px;
+    background: grey;
+}
+
+#footer {
+    clear:both;
+    background: orangered;
+}
+
+/* IE6 FIX */
+* html #left {
+    left: 150px;
+}
+
+
+.col {
+    margin-top: 10px;
+    position: relative;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    min-height: 100px;
+}
+
+.col-1 {
+    background: lightblue;
+    width: 200px;
+    float: left;
+}
+
+.col-2 {
+    background: #f5f5f5;
+    /*float: left;*/
+    width: 300px;
+}
+
+.col-3 {
+    background: #ffe3d7;
+    position: relative;
+    top: -100px;
+    width: 100px;
 }

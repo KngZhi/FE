@@ -215,6 +215,13 @@ img {
 }
 
 /*三列布局负边距法*/
+.page {
+    margin-top: 40px;
+}
+
+.bd {
+    padding: 0 230px 0 190px;
+}
 .main {
     float: left;
     width: 100%;
@@ -226,6 +233,7 @@ img {
     width: 190px;
     margin-left: -100%;
     background: blue;
+    position: relative;
 }
 
 .extra {
@@ -233,6 +241,7 @@ img {
     width: 190px;
     margin-left: 190px;
     background: yellow;
+    position: relative;
 }
 
 
