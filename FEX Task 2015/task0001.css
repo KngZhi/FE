@@ -13,7 +13,7 @@ h2 {
     font-size: 14px;
 }
 
-ul {
+ul,li {
     list-style-type: none;
 }
 
@@ -32,6 +32,13 @@ p {
 img {
     max-width: 400px;
     border: 2px solid red;
+}
+
+.footer {
+    content: "/200b";
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 
@@ -146,7 +153,6 @@ img {
 /*方法二*/
 .col-grid-2 {
     width: 100%;
-    margin-top: 20px;
     height: 20px;
 }
 
@@ -167,87 +173,122 @@ img {
 
 /* 三列布局方法一 */
 
+.col-1,
+.col-2,
+.col-3 {
+    height: 35px;
+}
+
 .col-grid-3 {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .col-1 {
-    width: 100px;
-    background-color: red;
+    width: 200px;
+    background-color: lightblue;
 }
 
 .col-2 {
-    width: calc(100% - 200px);
-    background-color: blue;
+    width: calc(100% - 400px);
+    background-color: #f5f5f5;
 }
 
 .col-3 {
-    width: 100px;
-    background-color: green;
+    width: 200px;
+    background-color: #ffe3d7;
 }
 
-/*三列布局方法二*/
+/* 双飞翼布局 */
 
-.col-grid-3a {
+.dw {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.col-1-a {
+.dw-main,
+.dw-left,
+.dw-right {
     float: left;
-    width: 100px;
-    background-color: orangered;
+    height: 35px;
 }
 
-.col-2-a {
-    width: calc(100% - 200px);
-    background-color: blue;
-    float: left;
-}
-
-.col-3-a {
-    width: 100px;
-    background-color: yellow;
-    float: left;
-}
-
-/*三列布局负边距法*/
-.page {
-    margin-top: 40px;
-}
-
-.bd {
-    padding: 0 230px 0 190px;
-}
-.main {
-    float: left;
+.dw-main {
     width: 100%;
-    background: red;
+    background: #f5f5f5;
 }
 
-.sub {
-    float: left;
-    width: 190px;
+.dw-left {
     margin-left: -100%;
-    background: blue;
-    position: relative;
+    background: lightblue;
+    width: 200px;
 }
 
-.extra {
+.dw-right {
     float: left;
-    width: 190px;
-    margin-left: 190px;
-    background: yellow;
+    margin-left: -200px;
+    width: 200px;
+    background: #ffe3d7;
+}
+
+.dw-middle {
+    margin-right:200px;
+    margin-left: 200px;
+    background: #f5f5f5;
+}
+
+/* 圣杯布局 */
+#header {
+    height: 35px;
+    width: 100%;
+    background: orangered;
+    margin-top: 20px;
+}
+
+#contain .column{
+    float: left;
     position: relative;
 }
 
+#contain {
+    padding: 0 200px 0 200px;
+}
+
+#main {
+    height: 35px;
+    width: 100%;
+    background: blue;
+}
+
+#sub {
+    margin-left: -100%;
+    width: 200px;
+    height: 35px;
+    left: -200px;
+    background: yellow;
+}
+
+#extra {
+    margin-left: -200px;
+    left: 200px;
+    height: 35px;
+    width: 200px;
+    background: lightblue;
+}
+
+#foot {
+    height: 35px;
+    clear: both;
+    background: black;
+}
 
 .sum {
+    margin-top: 20px;
     overflow: hidden;
     background: #f00;
+    padding-bottom: 10px;
 }
 
 .blue {
