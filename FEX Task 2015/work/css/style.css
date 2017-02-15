@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.head,
+.header {
+    height: 70px;
+    background: rgb(53, 63, 64);
+}
+
+.head {
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    padding-top: 15px;
+}
+
+.header__menus {
+    float: right;
+    padding-top: 25px;
+}
+
+.header__menus:before,
+.header__menus:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.header__menu {
+    list-style: none;
+    float: left;
+    width: 50px;
+}
+
+.github {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 10px;
+    background: url(../imgs/icon-github.png) no-repeat;
+    width: 35px;
+    height: 34px;
+}
+
+@media screen and (max-width: 1040px) {
+    .github {
+        display: none;
+    }
+}
+
+.banner {
+    min-width: 980px;
+    font-size: 0px;
+}
+
+.banner__big {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.banner__pic {
+    min-width: 980px;
+    width: 100%;
+}
+
+.banner__story {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0) 100%);
+    /*利用了多背景语法*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+
+    color: white;
+}
+
+.banner__story__headline {
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.banner__story__content {
+    font-size: 12px;
+    padding: 10px 10px 10px 30px;
+    text-align: left;
+    text-indent: 25px;
+    line-height: 1.5;
+}
+
+.content {
+    width: 100%;
+    min-width: 980px;
+    background: rgb(238, 238, 238);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.card {
+    width: 320px;
+    background: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+
+.card__pic {
+    width: 300px;
+    height: 180px;
+    margin: 10px 10px 0px 10px;
+}
+
+.card__content {
+    font-size: 12px;
+    line-height: 1.7;
+    padding: 15px 30px 25px 30px;
+}
+
+.profile {
+    min-width: 980px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.profile__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -50px;
+}
+
+.profile__headline {
+    font: 20px Century Gothic rgb(0, 0, 0);
+    text-align: center;
+}
+
+.profile__intro {
+    font: 14px rgb(0, 0, 0);
+    width: 600px;
+    text-indent: 30px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.footer {
+    background: rgb(0, 0, 0);
+    color: white;
+    margin-top: 50px;
+    min-width:980px;
+    width: 100%;
+}
+
+.footer__menus {
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+    width: 100%;
+    min-width: 980px;
+    padding-left: calc((100% - 320px)/2);
+    overflow: hidden;
+}
+
+.footer__menu {
+    list-style: none;
+    float: left;
+    width: 80px;
+    text-align: center;
+}
+
+.footer__notes {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 980px;
+    margin:0 auto;
+}
+
+.footer__links {
+    width: 190px;
+    margin-right: 6px;
+}
+
+.footer__link {
+    list-style-type: none;
+    text-align: left;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    min-width: 980px;
+    width: 100%;
+}
+
+.copyright__info {
+    text-align: center;
+}
+
+.copyright__github {
+    background: url(../imgs/icon-github.png) no-repeat black;
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+}
